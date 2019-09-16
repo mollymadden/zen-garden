@@ -1,0 +1,112 @@
+
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+*{
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html { 
+  background: url(./isaac-mehegan-jcfvPR-dTDk-unsplash.jpg) no-repeat center center fixed; 
+	background-size: cover;
+	padding: 50px;
+}
+
+p {
+	font-size: 12px;
+}
+
+li {
+	font-size: 12px;
+	padding: 5px;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 30fr 30fr 10fr 30fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+		"header header header header"
+		"intro intro intro intro"
+    "sidebar main main main"
+		"footer footer footer footer";
+		padding: 0px;
+}
+
+.intro {
+	grid-area: intro;
+}
+
+.summary {
+	margin: 15px;
+	text-align: right;
+
+}
+
+.preamble {
+	font-family: 'Sofia', cursive;
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 8px;
+}
+
+h1 {
+	font-family: 'Sofia', cursive;
+	text-align: right;
+	color:goldenrod;
+	font-size: 100px;
+	margin: 0px;
+	text-shadow: 2px 2px navy;
+}
+
+h2 {
+	font-family: 'Aladin', cursive;
+	text-align: right;
+	font-size: 40px;
+	margin: 0px;
+}
+
+h3 {
+	font-family: 'Aladin', cursive;
+	text-align: center;
+	font-size:30px;
+}
+
+header {
+	grid-area: header;
+	padding: 20px;
+	margin: 5px;
+	
+}
+
+
+.sidebar {
+	grid-area: sidebar;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 8px;
+
+}
+
+#zen-supporting {
+	grid-area: main;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin: 8px;
+
+}
+
+footer {
+	text-align: center;
+}
